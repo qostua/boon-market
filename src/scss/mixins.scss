@@ -1,14 +1,7 @@
-@mixin font($family) {
-    @if $family == text {
-        font-family: "", "Arial", serif;
-    } @else if $family == title {
-        font-family: "", "Georgia", sans-serif;
-    }
-}
 @mixin text-style {
-  color: black;
+  color: $grey-text;
 
-  @include text(10, 10, 700);
+  @include text(14, 24, 400);
 }
 @mixin text($size, $height: $size, $weight: 400) {
   font-size: $size * 1px;
@@ -63,8 +56,8 @@
 		font-weight: #{$weight};
 		font-style: normal;
 
-		src: url('../fonts/#{$url}.woff2') format('woff2'),
-		url('../#{$url}.woff') format('woff');
+		src: url('../../fonts/#{$url}.woff2') format('woff2'),
+		url('../../fonts/#{$url}.woff') format('woff');
 		font-display: swap;
 	}
 }

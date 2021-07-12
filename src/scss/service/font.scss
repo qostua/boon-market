@@ -8,8 +8,10 @@
 // 800: Extra Bold (Ultra Bold)
 // 900: Black (Heavy)
 
-@include font-face("family", "url", 400);
+@include font-face("Roboto", "Roboto-Bold", 700);
+@include font-face("Roboto", "Roboto-Regular", 400);
+@include font-face("Roboto", "Roboto-Light", 300);
 
 body {
-  @include font(text);
+  @include text(14, 24, 400);
 }
