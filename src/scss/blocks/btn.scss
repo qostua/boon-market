@@ -1,15 +1,17 @@
 .btn {
   display: inline-block;
 
-  padding: 10px 10px;
+  padding: 17px 68px;
 
   cursor: pointer;
   text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 
-  color: white;
+  color: $dark-grey;
   border: none;
+  background-color: $pink;
 
-  @include font(text);
-  @include text(18, 25);
+  @include text(14, 24, 700);
   @include active;
 }
